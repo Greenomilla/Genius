@@ -1,1 +1,1 @@
-# we are the negroes
+# we are the friends
