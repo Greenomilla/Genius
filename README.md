@@ -1,2 +1,1 @@
-# Genius
-Genious
+# we are the negroes
