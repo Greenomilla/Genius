@@ -1,4 +1,7 @@
 
+from sqlalchemy import false
+
+
 letter_to_number = {
   "A": 1,
   "B": 3,
@@ -23,3 +26,10 @@ def find_value(input: string) -> int:
   for letter in input:
     value += letter_to_number[letter]
   return value
+
+def find_if_number_has_equal_value(number: int) -> bool:
+  for i in number_to_word:
+    if i == number:
+      break
+  else: return false
+  return True
