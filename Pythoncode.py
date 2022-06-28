@@ -5,6 +5,18 @@ letter_to_number = {
   "C": 3,
 }
 
+number_to_word = {
+  1: "ONE",
+  2: "TWO",
+  3: "THREE",
+  4: "FOUR",
+  5: "FIVE",
+  6: "SIX",
+  7: "SEVEN",
+  8: "EIGHT",
+  9: "NINE",
+}
+
 # Calculate value of word by adding digit values
 def find_value(input: string) -> int:
   value = 0
