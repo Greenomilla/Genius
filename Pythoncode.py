@@ -37,12 +37,7 @@ number_to_word = {
   7: "SEVEN",
   8: "EIGHT",
   9: "NINE",
- }
+}
 
-
-def find_if_number_has_equal_value(number: int) -> bool:
-  for i in number_to_word:
-    if i == number:
-      break
-  else: return false
-  return True
+def score_of_word(word):
+  return sum(letter_to_number[letter] for letter in word.upper())
