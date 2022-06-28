@@ -1,7 +1,4 @@
 
-from sqlalchemy import false
-
-
 letter_to_number = {
   "A": 1,
   "B": 3,
