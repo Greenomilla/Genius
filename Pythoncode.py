@@ -26,18 +26,40 @@ letter_to_number = {
   "X": 8,
   "Y": 4,
   "Z": 10,
+  " ": 0,
+  "-": 0,
+  ",": 0,
 }
 number_to_word = {
-  1: "ONE",
-  2: "TWO",
-  3: "THREE",
-  4: "FOUR",
-  5: "FIVE",
-  6: "SIX",
-  7: "SEVEN",
-  8: "EIGHT",
-  9: "NINE",
+    0: "ZERO"
 }
 
-def score_of_word(word):
-  return sum(letter_to_number[letter] for letter in word.upper())
+import inflect
+p = inflect.engine()
+p.number_to_words(99)
+
+#Nigger shit
+# print(p.number_to_words(int(input('Print Daddy: '))))
+for n in range(10000):
+    # print(n)
+    number_to_word[n] = p.number_to_words(n)
+
+# print(number_to_word)
+
+def score_of_word(Daddy):
+  return sum(letter_to_number[letter] for letter in Daddy.upper())
+
+def score_of_number(X):
+    return score_of_word(number_to_word[int(X)])
+
+# print(score_of_number(input('Plesae daddy: ')))
+
+def is_number_equal_to_score(Z):
+    return Z == score_of_number(Z)
+
+for number in number_to_word.keys():
+    print(number,score_of_number(number),is_number_equal_to_score(number))
+    if is_number_equal_to_score(number): break
+
+
+# print(score_of_word(input('Please type the leetter pls: ')))
