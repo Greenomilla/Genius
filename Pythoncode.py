@@ -47,7 +47,8 @@ for n in range(10000):
 # print(number_to_word)
 
 def score_of_word(Daddy):
-  return sum(letter_to_number[letter] for letter in Daddy.upper())
+    """Nigger"""
+    return sum(letter_to_number[letter] for letter in Daddy.upper())
 
 def score_of_number(X):
     return score_of_word(number_to_word[int(X)])
@@ -62,4 +63,4 @@ for number in number_to_word.keys():
     if is_number_equal_to_score(number): break
 
 
-# print(score_of_word(input('Please type the leetter pls: ')))
+print(score_of_word(input('Please type the leetter pls: ')))
